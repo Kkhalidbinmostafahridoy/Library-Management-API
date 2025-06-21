@@ -1,0 +1,23 @@
+{
+  "scripts": {
+    "dev": "ts-node-dev --respawn --transpile-only src/app/server.ts",
+    "start": "node ./dist/server.js",
+    "start:prod":"nodemon ./dist/server.js",
+    "build": "tsc",
+    "lint": "npx eslint .",
+    "lint:fix":"npx eslint . --fix" 
+  },
+  "dependencies": {
+    "body-parser": "^2.2.0",
+    "express": "^5.1.0",
+    "mongoose": "^8.16.0"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.29.0",
+    "@types/express": "^5.0.3",
+    "eslint": "^9.29.0",
+    "globals": "^16.2.0",
+    "ts-node-dev": "^2.0.0",
+    "typescript-eslint": "^8.34.1"
+  }
+}
